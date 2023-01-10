@@ -48,7 +48,8 @@ int APIENTRY WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance,
         return -1;
     }
 
-    lv_win32_add_all_input_devices_to_group(NULL);
+    //Uncomment it to create a default group for TAB key based navigation
+    //lv_win32_add_all_input_devices_to_group(NULL);
 
     ui_init();
 
